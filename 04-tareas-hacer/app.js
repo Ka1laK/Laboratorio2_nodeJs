@@ -15,9 +15,9 @@ const main = async() => {
     
     let opt ='';
     const tareas = new Tareas();
-    const tareasDB = leerDB(); // funcion quer la BD si existen datos los retorna
-    if(tareasDB) {// cargar tareas leidas 
-        tareas.cargarTareasFromArray(tareasDB); // se invoca la funcion cargarTarea
+    const tareasDB = leerDB(); 
+    if(tareasDB) {
+        tareas.cargarTareasFromArray(tareasDB);
         
     }
 
@@ -70,5 +70,3 @@ const main = async() => {
 }
 
 main();
-
-// completado hasta el punto 15 - labo 1
